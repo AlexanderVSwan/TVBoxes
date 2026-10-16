@@ -4,3 +4,5 @@
 
 meson8b-mxq-wifi-pu.dtb
 Описывает конфигурацию Wi-Fi-адаптера Realtek RTL8189ES, подключённого по шине SDIO, а также внутренние подтягивающие резисторы на линиях интерфейса SD-карты.
+meson8b-mxq-wifi-pu.dts
+Текстовый вариант meson8b-mxq-wifi-pu.dtb
