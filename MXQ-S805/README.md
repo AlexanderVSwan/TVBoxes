@@ -26,7 +26,7 @@ meson8b-mxq-wifi-pu.dts
 
 
 Добавил в rc.local что бы исключить переключение частот SoC и растащить прерывания по ядрам.
-
+```bash
 if [ -d /sys/devices/system/cpu/cpu0/cpufreq ]; then
     echo 1200000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
     echo 1200000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
@@ -42,4 +42,4 @@ IRQ_MMC2=$(awk -F: '/c1108e00\.mmc/ {gsub(/ /, "", $1); print $1}' /proc/interru
 [ -n "$IRQ_MMC2" ] && echo 8 > /proc/irq/$IRQ_MMC2/smp_affinity
 
 exit 0
-
+```
