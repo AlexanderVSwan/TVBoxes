@@ -1,0 +1,5 @@
+dtb_file=/dtb/meson8b-mxq-wifi-pu.dtb
+# The following contents are auto-generated.
+rootdev=UUID=5c240bbf-1d15-4853-8742-d2d21ed742cc
+rootfstype=ext4
+usbstoragequirks=0x2537:0x1066:u,0x2537:0x1068:u
