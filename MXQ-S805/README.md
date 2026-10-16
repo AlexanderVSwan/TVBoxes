@@ -23,3 +23,23 @@ meson8b-mxq-wifi-pu.dtb
 
 meson8b-mxq-wifi-pu.dts
 Текстовый вариант meson8b-mxq-wifi-pu.dtb
+
+
+Добавил в rc.local что бы исключить переключение частот SoC и растащить прерывания по ядрам.
+
+if [ -d /sys/devices/system/cpu/cpu0/cpufreq ]; then
+    echo 1200000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+    echo 1200000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
+    echo performance > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+fi
+
+IRQ_ETH=$(awk -F: '/eth0/ {gsub(/ /, "", $1); print $1}' /proc/interrupts)
+IRQ_MMC1=$(awk -F: '/c1108c20\.mmc/ {gsub(/ /, "", $1); print $1}' /proc/interrupts)
+IRQ_MMC2=$(awk -F: '/c1108e00\.mmc/ {gsub(/ /, "", $1); print $1}' /proc/interrupts)
+
+[ -n "$IRQ_ETH" ]  && echo 2 > /proc/irq/$IRQ_ETH/smp_affinity
+[ -n "$IRQ_MMC1" ] && echo 4 > /proc/irq/$IRQ_MMC1/smp_affinity
+[ -n "$IRQ_MMC2" ] && echo 8 > /proc/irq/$IRQ_MMC2/smp_affinity
+
+exit 0
+
