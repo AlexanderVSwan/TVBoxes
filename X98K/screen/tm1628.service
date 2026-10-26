@@ -1,0 +1,15 @@
+[Unit]
+Description=X98K TM1628 Front Panel Display Daemon
+DefaultDependencies=no
+After=systemd-udevd.service sysfs.mount
+Before=sysinit.target shutdown.target
+Conflicts=shutdown.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/tm1628d
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=sysinit.target
