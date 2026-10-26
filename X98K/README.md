@@ -5,6 +5,14 @@ SoC: Rockchip RK3528
 Исходная ОС: Android 13
 
 Исходное ядро Android: Linux 5.10.157
+Ethernet: end0  - st_gmac - встроенный в Soc контроллер Rockchip GMAC.
+Wi-Fi: wlan0 - aicwf_sdio - семейство AIC8800, прошивка 8800d80_u02. Скопировал файлы из android.
+
+
+
+
+Wi-Fi: wlan0 → aicwf_sdio → семейство AIC8800, прошивка 8800d80_u02.
+
 
 Вариант платы в Armbian: Hungsun X88 TV box
 
