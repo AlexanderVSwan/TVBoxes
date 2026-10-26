@@ -6,6 +6,10 @@ SoC: Rockchip RK3528
 
 Исходное ядро Android: Linux 5.10.157
 
+D:\ADB>adb shell uname -a
+
+Linux localhost 5.10.157 #49 SMP PREEMPT Tue Aug 20 10:40:05 CST 2024 aarch64 Toybox
+
 Сборка: Google/ap201/ap201:13/TQ2A.230305.008.F1/xml08201041:userdebug/release-keys.
 
 Ethernet: end0  - st_gmac - встроенный в Soc контроллер Rockchip GMAC.
