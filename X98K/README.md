@@ -6,6 +6,8 @@ SoC: Rockchip RK3528
 
 Исходное ядро Android: Linux 5.10.157
 
+Сборка: Google/ap201/ap201:13/TQ2A.230305.008.F1/xml08201041:userdebug/release-keys.
+
 Ethernet: end0  - st_gmac - встроенный в Soc контроллер Rockchip GMAC.
 Wi-Fi: wlan0 - aicwf_sdio - семейство AIC8800, прошивка 8800d80_u02. Скопировал файлы из android.
 
