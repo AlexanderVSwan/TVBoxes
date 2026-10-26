@@ -21,7 +21,8 @@ Wi-Fi: wlan0 → aicwf_sdio → семейство AIC8800, прошивка 880
 
 Использовал образ https://github.com/joilg/x88pro/releases (Armbian-unofficial_26.08.0-trunk_X88pro_resolute_vendor_6.1.115.img.xz)
 
+<img src="photos/x98k_photo1.jpg" alt="X98K — фотография приставки" width="400">
+<img src="photos/x98k_photo2.jpg" alt="X98K — фотография приставки" width="400">
+<img src="photos/x98k_photo5.jpg" alt="X98K — фотография приставки" width="400">
 
-![X98K — фотография приставки](photos/x98k_photo1.jpg)
-![X98K — фотография приставки](photos/x98k_photo2.jpg)
-![X98K — фотография приставки](photos/x98k_photo5.jpg)
+
