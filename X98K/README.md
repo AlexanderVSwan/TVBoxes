@@ -5,6 +5,7 @@ SoC: Rockchip RK3528
 Исходная ОС: Android 13
 
 Исходное ядро Android: Linux 5.10.157
+
 Ethernet: end0  - st_gmac - встроенный в Soc контроллер Rockchip GMAC.
 Wi-Fi: wlan0 - aicwf_sdio - семейство AIC8800, прошивка 8800d80_u02. Скопировал файлы из android.
 
@@ -19,3 +20,8 @@ Wi-Fi: wlan0 → aicwf_sdio → семейство AIC8800, прошивка 880
 Есть дисплей, многоразрядный светодиодный индикатор на передней панели. 4 символа с двоеточием для часов и иконки.
 
 Использовал образ https://github.com/joilg/x88pro/releases (Armbian-unofficial_26.08.0-trunk_X88pro_resolute_vendor_6.1.115.img.xz)
+
+
+![X98K — фотография приставки](photos/x98k_photo1.jpg)
+![X98K — фотография приставки](photos/x98k_photo2.jpg)
+![X98K — фотография приставки](photos/x98k_photo5.jpg)
